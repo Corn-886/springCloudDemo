@@ -1,0 +1,44 @@
+server:
+  port: 8083
+  application:
+
+spring:
+  application:
+    name: web-moudle
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: root
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8763/eureka/
+    # 单节点时没必要注册
+    # 注册到eureka
+    register-with-eureka: false
+    # 获取注册信息
+    fetch-registry: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    shutdown:
+      enabled: true
+  health:
+    show-details: always
+
+logging:
+  level:
+    com:
+      example:
+        dao: DEBUG
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

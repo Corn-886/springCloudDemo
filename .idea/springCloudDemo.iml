@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/dashboard-demo/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dashboard-demo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/eureka-demo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/operate-module/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web-moudle/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/dashboard-demo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/eureka-demo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/operate-module/target" />
+      <excludeFolder url="file://$MODULE_DIR$/web-moudle/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.ProdMapper">
+
+    <resultMap id="Product" type="com.example.module.Product">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="stock" jdbcType="INTEGER" property="stock"/>
+        <result column="price"  property="price"/>
+    </resultMap>
+
+    <select id="queryAllProdById"  resultMap="Product">
+        select * from tb_prod where id=#{id}
+    </select>
+
+    <select id="selectTest" resultType="int">
+       select count(1) from tb_prod
+    </select>
+</mapper>

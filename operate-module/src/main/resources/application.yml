@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: operate-demo
+
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8763/eureka/
+
+datacloud:
+  source: robot
+  secret: 85c62a98-fa96-485f-9025-27a2ebf61dbc
+  invest_url: http://10.2.117.162:6884/datacloud/security/batch/gfaccount_invest_test
